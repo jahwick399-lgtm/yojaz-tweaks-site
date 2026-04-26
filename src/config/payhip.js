@@ -1,26 +1,26 @@
 /**
- * YoJaz Payhip Product URLs
- * ─────────────────────────
- * Replace each placeholder with your real Payhip product link.
- * Format: https://payhip.com/b/YOURCODE
- *
- * To find your link:
- *   1. Log into payhip.com/account
- *   2. Go to Products → click a product → copy the share URL
+ * YoJaz — Payhip Product URLs
+ * ────────────────────────────
+ * All links in one place. Swap any URL here and it updates site-wide.
  */
 
 export const PAYHIP_URLS = {
-  pingOptimizer:   'https://payhip.com/b/PLACEHOLDER_PING',
-  zeroDelayEngine: 'https://payhip.com/b/PLACEHOLDER_ZERO',
-  fpsBooster:      'https://payhip.com/b/PLACEHOLDER_FPS',
-  aimTweaker:      'https://payhip.com/b/PLACEHOLDER_AIM',
-  shotgunTweaker:  'https://payhip.com/b/PLACEHOLDER_SHOTGUN',
-  utilityBundle:   'https://payhip.com/b/PLACEHOLDER_BUNDLE',
-}
+  // ── PC Optimizations ────────────────────────────────────
+  proTweaker:      'https://payhip.com/b/u5PUQ',
+  premiumTweaker:  'https://payhip.com/b/a9JZA',
+  pingOptimizer:   'https://payhip.com/b/Gv5Mw',
+  zeroDelayEngine: 'https://payhip.com/b/s5EPW',
 
-/** Button labels — change freely */
-export const CTA_LABELS = {
-  primary:   'Unlock Now',
-  secondary: 'Instant Download',
-  bundle:    'Get the Bundle',
+  // ── Aim Optimization ────────────────────────────────────
+  bloomReducer:    'https://payhip.com/b/xkNAS',
+  shotgunTweaker:  'https://payhip.com/b/NRf2F',
+
+  // ── Console ─────────────────────────────────────────────
+  ps4Tweaks:       'https://payhip.com/b/5bUoi',
+  ps5Tweaks:       'https://payhip.com/b/biFmG',
+  xboxOldGen:      'https://payhip.com/b/LmSYq',
+  xboxNewGen:      'https://payhip.com/b/d9ueD',
+
+  // ── KBM+ Sens ───────────────────────────────────────────
+  kbmSens:         'https://payhip.com/b/90esD',
 }
