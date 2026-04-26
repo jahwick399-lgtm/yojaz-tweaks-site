@@ -24,7 +24,7 @@ const PC_PRODUCTS = [
   {
     key: 'proTweaker',
     name: 'YoJaz Pro Tweaker',
-    price: '$19.99',
+    price: '$14.99',
     badge: 'MOST POPULAR',
     desc: 'Advanced CPU, GPU, and network tuning built for competitive dominance. Boosts FPS up to +150% on mid-range hardware.',
     features: ['Advanced CPU scheduler priority', 'GPU HAGS + MPO optimization', '1ms timer resolution tuning'],
@@ -33,7 +33,7 @@ const PC_PRODUCTS = [
   {
     key: 'premiumTweaker',
     name: 'YoJaz Premium Tweaker',
-    price: '$39.99',
+    price: '$19.99',
     badge: 'BEST VALUE',
     desc: 'Full system deep-dive with custom kernel tweaks, real-time performance monitoring, and lifetime updates.',
     features: ['Custom kernel registry tuning', 'Real-time performance monitor', 'Lifetime updates + VIP support'],
@@ -42,7 +42,7 @@ const PC_PRODUCTS = [
   {
     key: 'pingOptimizer',
     name: 'YoJaz Ping Optimizer',
-    price: '$12.99',
+    price: '$9.99',
     badge: null,
     desc: 'Eliminates packet jitter and connection spikes for consistent sub-20ms ping in any ranked lobby.',
     features: ['TCP/IP stack deep optimization', 'DNS latency reduction', 'Packet jitter elimination'],
@@ -51,7 +51,7 @@ const PC_PRODUCTS = [
   {
     key: 'zeroDelayEngine',
     name: 'Zero Delay Engine',
-    price: '$14.99',
+    price: '$12.99',
     badge: 'NEW',
     desc: 'Surgically removes every layer of Windows input delay. Feel the difference from the very first click.',
     features: ['Raw input pipeline boost', 'USB polling rate maximizer', 'Windows HID delay removal'],
@@ -63,7 +63,7 @@ const AIM_PRODUCTS = [
   {
     key: 'bloomReducer',
     name: 'Bloom Reducer',
-    price: '$9.99',
+    price: '$6.99',
     badge: null,
     desc: 'Removes in-game bloom mechanics for precise, predictable shot placement every single time you pull the trigger.',
     features: ['In-game bloom elimination', 'Precise shot consistency', 'Works on all major FPS titles'],
@@ -72,7 +72,7 @@ const AIM_PRODUCTS = [
   {
     key: 'shotgunTweaker',
     name: 'Shotgun Tweaker',
-    price: '$9.99',
+    price: '$6.99',
     badge: 'POPULAR',
     desc: 'Maximum pellet spread optimization for shotgun mechanics. More pellets register, more gunfights won.',
     features: ['Pellet spread pattern control', 'Hit registration improvement', 'Cross-engine compatibility'],
@@ -85,7 +85,7 @@ const CONSOLE_PRODUCTS = [
     key: 'ps4Tweaks',
     name: 'PS4 Tweaks',
     platform: 'PlayStation 4',
-    price: '$9.99',
+    price: '$4.99',
     badge: null,
     desc: 'Stability and performance optimization pack for PS4. Faster load times and smoother gameplay every session.',
     features: ['Load time acceleration', 'Frame stability boost', 'Network latency optimization'],
@@ -95,7 +95,7 @@ const CONSOLE_PRODUCTS = [
     key: 'ps5Tweaks',
     name: 'PS5 Tweaks',
     platform: 'PlayStation 5',
-    price: '$14.99',
+    price: '$9.99',
     badge: 'MOST POPULAR',
     desc: 'Extract hidden PS5 performance. Lower input lag, stable frame delivery, and faster SSD response times.',
     features: ['Input lag reduction mode', 'SSD response optimization', 'VRR + 120Hz tuning'],
@@ -105,7 +105,7 @@ const CONSOLE_PRODUCTS = [
     key: 'xboxOldGen',
     name: 'Xbox Old Gen Tweaks',
     platform: 'Xbox One / One X',
-    price: '$9.99',
+    price: '$4.99',
     badge: null,
     desc: 'Squeeze every frame out of Xbox One hardware. Background process killer, network optimizer, and more.',
     features: ['Background process terminator', 'Network stack optimization', 'Frame rate stabilizer'],
@@ -115,7 +115,7 @@ const CONSOLE_PRODUCTS = [
     key: 'xboxNewGen',
     name: 'Xbox New Gen Tweaks',
     platform: 'Xbox Series X/S',
-    price: '$14.99',
+    price: '$9.99',
     badge: 'NEW',
     desc: 'Series X/S precision tuning. Game Mode deep settings, VRR optimization, and latency reduction built in.',
     features: ['Game Mode deep configuration', 'VRR + FPS boost', 'Low-latency network profile'],
@@ -126,7 +126,7 @@ const CONSOLE_PRODUCTS = [
 const KBM_PRODUCT = {
   key: 'kbmSens',
   name: 'YoJaz KBM Sens + Binds',
-  price: '$9.99',
+  price: '$4.99',
   badge: 'EXCLUSIVE',
   desc: 'Professionally calibrated keyboard and mouse sensitivity settings with optimized key bindings for competitive gaming. Built by YoJaz — refined over thousands of hours of gameplay.',
   features: [
