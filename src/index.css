@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: #020204;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #020204; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.10); border-radius: 2px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.22); }
+
+  ::selection { background: rgba(255,255,255,0.12); }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+  }
+
+  /* Refined: present but not blinding */
+  .glow-text {
+    text-shadow:
+      0 0 24px rgba(255,255,255,0.25),
+      0 0 60px rgba(255,255,255,0.07);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 0 20px rgba(255,255,255,0.04);
+  }
+
+  .text-gradient {
+    background: linear-gradient(150deg, #ffffff 0%, rgba(255,255,255,0.65) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: radial-gradient(ellipse 70% 55% at 50% 28%, rgba(255,255,255,0.03) 0%, transparent 70%);
+  }
+
+  /* Glitch: very rare, very subtle — fires once every ~22s */
+  .glitch { animation: glitch 22s infinite; }
+
+  /* Bar shimmer — quieter sweep */
+  .bar-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.15) 50%, transparent 100%);
+    animation: shimmer 3.8s ease-in-out infinite;
+  }
+}
+
+/* ── Keyframes ──────────────────────────────────────── */
+
+@keyframes glitch {
+  0%, 94.4%, 100% { clip-path: none; transform: none; }
+  94.6% { clip-path: polygon(0 18%, 100% 18%, 100% 28%, 0 28%); transform: translateX(-3px); opacity: 0.92; }
+  95%   { clip-path: polygon(0 52%, 100% 52%, 100% 62%, 0 62%); transform: translateX(3px);  opacity: 0.92; }
+  95.2% { clip-path: none; transform: none; }
+}
+
+@keyframes shimmer {
+  0%   { transform: translateX(-110%); }
+  100% { transform: translateX(110%); }
+}
+
+/* ── Review marquee tracks ────────────────────────────── */
+@keyframes scrollLeft  { from { transform: translateX(0);    } to { transform: translateX(-50%); } }
+@keyframes scrollRight { from { transform: translateX(-50%); } to { transform: translateX(0);    } }
+
+.review-track-fwd {
+  animation: scrollLeft  58s linear infinite;
+  will-change: transform;
+}
+.review-track-rev {
+  animation: scrollRight 72s linear infinite;
+  will-change: transform;
+}
+
+/* Pause both rows when hovering the section */
+.review-row:hover .review-track-fwd,
+.review-row:hover .review-track-rev {
+  animation-play-state: paused;
+}
+
+/* Legacy marquee (kept for any other use) */
+.marquee-wrapper:hover .marquee-track { animation-play-state: paused; }
+
+.marquee-fade-left  { background: linear-gradient(to right, #020204 0%, transparent 20%); }
+.marquee-fade-right { background: linear-gradient(to left,  #020204 0%, transparent 20%); }
